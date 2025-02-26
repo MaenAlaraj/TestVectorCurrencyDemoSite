@@ -2,12 +2,13 @@ import React from "react";
 
 const App = () => {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100">
-      <div className="bg-white p-6 rounded-lg shadow-lg w-96 text-center">
+    <div className="min-h-screen flex items-center justify-center bg-gray-50">
+      <div className="bg-white p-10 rounded-2xl shadow-2xl w-[450px] text-center border border-gray-300">
+        <h2 className="text-3xl font-extrabold text-gray-800 mb-6">会員情報</h2>
         <LabelView label="会員番号" value="08016971552" />
-        <LabelView label="購入金額" value="08016971552" />
+        <LabelView label="購入金額" value="100" />
         <LabelView label="SBUserID" value="09000000013" />
-        <button className="mt-6 w-full text-xl font-bold bg-blue-500 text-white py-3 rounded-lg hover:bg-blue-600">
+        <button className="mt-8 w-full text-2xl font-bold bg-blue-600 text-white py-4 rounded-xl hover:bg-blue-700 transition-all shadow-md">
           VectorBTN
         </button>
       </div>
@@ -17,9 +18,9 @@ const App = () => {
 
 const LabelView = ({ label, value }) => {
   return (
-    <div className="flex justify-between items-center py-4 text-xl font-bold">
-      <span>{label}</span>
-      <span>{value}</span>
+    <div className="flex justify-between items-center py-5 text-2xl font-semibold border-b border-gray-200">
+      <span className="text-gray-700">{label}</span>
+      <span className="text-gray-900">{value}</span>
     </div>
   );
 };
