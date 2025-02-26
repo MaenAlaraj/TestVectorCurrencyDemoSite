@@ -1,16 +1,27 @@
 import React from "react";
+import VectorBTN from "./components/vectorCurrencyBtn"; // Import the button component
+
 
 const App = () => {
+  // Define label values
+  const memberId = "08016971552";
+  const purchaseAmount = "1000";
+  const sbUserId = "09000000013";
+
   return (
     <div className="min-h-screen flex items-center justify-center bg-gray-50">
       <div className="bg-white p-10 rounded-2xl shadow-2xl w-[450px] text-center border border-gray-300">
         <h2 className="text-3xl font-extrabold text-gray-800 mb-6">会員情報</h2>
-        <LabelView label="会員番号" value="08016971552" />
-        <LabelView label="購入金額" value="100" />
-        <LabelView label="SBUserID" value="09000000013" />
-        <button className="mt-8 w-full text-2xl font-bold bg-blue-600 text-white py-4 rounded-xl hover:bg-blue-700 transition-all shadow-md">
-          VectorBTN
-        </button>
+        <LabelView label="会員番号" value={memberId} />
+        <LabelView label="購入金額" value={purchaseAmount} />
+        <LabelView label="SBUserID" value={sbUserId} />
+        <div className="mt-8">
+          <VectorBTN
+            memberId={memberId}
+            purchaseAmount={purchaseAmount}
+            sbUserId={sbUserId}
+          />
+        </div>
       </div>
     </div>
   );
