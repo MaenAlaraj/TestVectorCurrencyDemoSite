@@ -3,6 +3,14 @@ import React from "react";
 const VectorBTN = ({ memberId, purchaseAmount, sbUserId }) => {
   const handleButtonClick = async () => {
     console.log("[Vector Currency]: Payment initiated.");
+
+    // Log values in console
+    console.log("会員番号:", memberId);
+    console.log("購入金額:", purchaseAmount);
+    console.log("SBUserID:", sbUserId);
+
+
+    
     await window.CCWalletInterface.VectorCurrencyManagement(memberId,purchaseAmount,sbUserId);
   };
 
