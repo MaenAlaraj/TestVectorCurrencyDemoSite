@@ -6,7 +6,7 @@ const App = () => {
   // Define label values
   const memberId = "9393908016971552";
   const purchaseAmount = "1000";
-  const sbUserId = "Townspeople,0.05";
+  const userRankInfo = "Townspeople,0.05";
 
   return (
     <div className="min-h-screen flex items-center justify-center bg-gray-50">
@@ -14,12 +14,12 @@ const App = () => {
         <h2 className="text-3xl font-extrabold text-gray-800 mb-6">会員情報</h2>
         <LabelView label="会員番号" value={memberId} />
         <LabelView label="購入金額" value={purchaseAmount} />
-        <LabelView label="SBUserID" value={sbUserId} />
+        <LabelView label="UserRankInfo" value={userRankInfo} />
         <div className="mt-8">
           <VectorBTN
             memberId={memberId}
             purchaseAmount={purchaseAmount}
-            sbUserId={sbUserId}
+            sbUserId={userRankInfo}
           />
         </div>
       </div>
