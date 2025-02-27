@@ -10,7 +10,7 @@ const VectorBTN = ({ memberId, purchaseAmount, sbUserId }) => {
     console.log("SBUserID:", sbUserId);
 
 
-    
+
     await window.CCWalletInterface.VectorCurrencyManagement(memberId,purchaseAmount,sbUserId);
   };
 
