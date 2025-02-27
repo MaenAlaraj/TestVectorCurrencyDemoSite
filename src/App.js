@@ -19,7 +19,7 @@ const App = () => {
           <VectorBTN
             memberId={memberId}
             purchaseAmount={purchaseAmount}
-            sbUserId={userRankInfo}
+            userRankInfo={userRankInfo}
           />
         </div>
       </div>
