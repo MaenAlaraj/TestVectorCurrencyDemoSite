@@ -6,7 +6,7 @@ const App = () => {
   // Define label values
   const memberId = "9393908016971552";
   const purchaseAmount = "1000";
-  const sbUserId = "Townspeople.0.05";
+  const sbUserId = "Townspeople,0.05";
 
   return (
     <div className="min-h-screen flex items-center justify-center bg-gray-50">
