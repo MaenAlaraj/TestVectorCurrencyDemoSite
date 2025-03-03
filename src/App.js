@@ -4,7 +4,7 @@ import VectorBTN from "./components/vectorCurrencyBtn"; // Import the button com
 
 const App = () => {
   // Define label values
-  const memberId = "9393909000000154";
+  const memberId = "9392909000000154";
   const purchaseAmount = "1000";
   const sbUserId = "Townspeople,0.05";
 
