@@ -11,7 +11,7 @@ const VectorBTN = ({ memberId, purchaseAmount, sbUserId, storeCode }) => {
     console.log("StoreCode:", storeCode);
 
 
-    await window.CCWalletInterface.VectorCurrencyManagement(memberId,purchaseAmount,sbUserId, storeCode);
+    await window.CCWalletInterface.VectorCurrencyManagement(memberId,purchaseAmount,sbUserId, storeCode,"");
   };
 
   return (
