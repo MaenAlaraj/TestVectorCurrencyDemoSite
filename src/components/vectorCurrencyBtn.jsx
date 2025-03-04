@@ -1,6 +1,6 @@
 import React from "react";
 
-const VectorBTN = ({ memberId, purchaseAmount, sbUserId, storeCode }) => {
+const VectorBTN = ({ memberId, purchaseAmount, sbUserId, storeCode, faceData }) => {
   const handleButtonClick = async () => {
     console.log("[Vector Currency]: Payment initiated.");
 
@@ -9,9 +9,10 @@ const VectorBTN = ({ memberId, purchaseAmount, sbUserId, storeCode }) => {
     console.log("購入金額:", purchaseAmount);
     console.log("SBUserID:", sbUserId);
     console.log("StoreCode:", storeCode);
+    console.log("faceData:", faceData);
 
 
-    await window.CCWalletInterface.VectorCurrencyManagement(memberId,purchaseAmount,sbUserId, storeCode,"");
+    await window.CCWalletInterface.VectorCurrencyManagement(memberId,purchaseAmount,sbUserId, storeCode, faceData);
   };
 
   return (

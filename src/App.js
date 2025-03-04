@@ -8,6 +8,7 @@ const App = () => {
   const purchaseAmount = "1000";
   const sbUserId = "Townspeople,0.05,市民,Communitymembers,0.01,Test";
   const storeCode = "9392909000000015";
+  const faceData = "";
 
   return (
     <div className="min-h-screen flex items-center justify-center bg-gray-50">
@@ -23,6 +24,7 @@ const App = () => {
             purchaseAmount={purchaseAmount}
             sbUserId={sbUserId}
             storeCode={storeCode}
+            faceData={faceData}
           />
           
           <FaceBTN
