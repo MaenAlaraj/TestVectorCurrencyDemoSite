@@ -1,6 +1,6 @@
 import React from "react";
 import VectorBTN from "./components/vectorCurrencyBtn"; // Import the button component
-
+import FaceBTN from "./components/FaceBTN"; // Import the Face button component
 
 const App = () => {
   // Define label values
@@ -24,6 +24,14 @@ const App = () => {
             sbUserId={sbUserId}
             storeCode={storeCode}
           />
+          
+          <FaceBTN
+            memberId={memberId}
+            purchaseAmount={purchaseAmount}
+            sbUserId={sbUserId}
+            storeCode={storeCode}
+          />
+
         </div>
       </div>
     </div>
