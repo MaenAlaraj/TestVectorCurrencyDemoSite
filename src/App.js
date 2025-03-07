@@ -4,7 +4,7 @@ import FaceBTN from "./components/FaceBTN"; // Import the Face button component
 
 const App = () => {
   // Define label values
-  const memberId = "9392909000000154";
+  const memberId = "9392909001500009";
   const purchaseAmount = "2000";
   const sbUserId = "Townspeople,0.05,市民,Communitymembers,0.01,Test";
   const storeCode = "9392909001500012";
