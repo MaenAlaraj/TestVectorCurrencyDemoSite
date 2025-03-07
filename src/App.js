@@ -7,7 +7,7 @@ const App = () => {
   const memberId = "9392909000000154";
   const purchaseAmount = "2000";
   const sbUserId = "Townspeople,0.05,市民,Communitymembers,0.01,Test";
-  const storeCode = "9392909000000015";
+  const storeCode = "9392909001500012";
 
   return (
     <div className="min-h-screen flex items-center justify-center bg-gray-50">
