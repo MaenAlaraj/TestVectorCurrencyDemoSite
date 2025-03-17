@@ -1,6 +1,8 @@
 import React from "react";
 import VectorBTN from "./components/vectorCurrencyBtn"; // Import the button component
 import FaceBTN from "./components/FaceBTN"; // Import the Face button component
+import CashDrawerBTN from "./components/CashDrawerBTN"; // Import the new button component
+
 
 const App = () => {
   // Define label values
@@ -26,6 +28,13 @@ const App = () => {
           />
           
           <FaceBTN
+            memberId={memberId}
+            purchaseAmount={purchaseAmount}
+            sbUserId={sbUserId}
+            storeCode={storeCode}
+          />
+
+          <CashDrawerBTN
             memberId={memberId}
             purchaseAmount={purchaseAmount}
             sbUserId={sbUserId}
