@@ -4,7 +4,8 @@ const CashDrawerBTN = ({ memberId, purchaseAmount, sbUserId, storeCode }) => {
   const handleOpenDrawer = async () => {
     console.log("[Opening Cash Drawer]: Opening Cash Drawer initiated.");
 
-    await window.GCPaymentInterface.openCashDrawer();
+    //await window.GCPaymentInterface.openCashDrawer();
+    await window.GCPaymentInterface.openCashDrawerBluetooth();
   };
 
   return (
